@@ -23,14 +23,14 @@ public class TicTacToe implements ActionListener{
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(1000,800);
-        frame.getContentPane().setBackground(new Color(50,50,50));
+        frame.getContentPane().setBackground(new Color(200, 200, 200));
         //frame.setLayout(null);
         frame.setVisible(true);
         frame.setTitle("Tic-Tac-Toe");
         frame.setLayout(new BorderLayout());
 
-        textfield.setBackground(new Color(189, 224, 254));
-        textfield.setForeground(new Color(0, 29, 61));
+        textfield.setBackground(new Color(70, 70, 70));
+        textfield.setForeground(new Color(255, 255, 255));
         textfield.setFont(new Font("MV Boli",Font.BOLD,75));
         textfield.setHorizontalAlignment(JLabel.CENTER);
         textfield.setVerticalAlignment(JLabel.CENTER);
@@ -47,8 +47,8 @@ public class TicTacToe implements ActionListener{
         //tp.setBounds(0,0,1000,100);
 
 
-        tf.setBackground(new Color(162, 218, 255));
-        tf.setForeground(new Color(0, 29, 61));
+        tf.setBackground(new Color(70, 70, 70));
+        tf.setForeground(new Color(255, 255, 255));
         tf.setFont(new Font("MV Boli",Font.BOLD,75));
         tf.setHorizontalAlignment(JLabel.CENTER);
         tf.setVerticalAlignment(JLabel.CENTER);
@@ -57,14 +57,14 @@ public class TicTacToe implements ActionListener{
 
         button_panel.setLayout(new GridLayout(3,3,10,10));
         button_panel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
-        button_panel.setBackground(new Color(255, 229, 217));
+        button_panel.setBackground(new Color(100, 100, 100));
         //button_panel.setBounds(0,200 ,1000, 300);
 
         reset.setFont(new Font("MV Boli",Font.BOLD,75));
         reset.setFocusable(false);
         reset.addActionListener(this);
-        reset.setBackground(new Color(189, 224, 254));
-        reset.setForeground(new Color(0, 29, 61));
+        reset.setBackground(new Color(70,70,70));
+        reset.setForeground(new Color(255, 255, 255));
         reset.setText("RESET");
         //reset.setBounds(0, 500, 1000,100 );
         reset.setVerticalTextPosition(JButton.CENTER);
@@ -77,7 +77,7 @@ public class TicTacToe implements ActionListener{
             buttons[i].setFont(new Font("MV Boli",Font.BOLD,120));
             buttons[i].setFocusable(false);
             buttons[i].addActionListener(this);
-            buttons[i].setBackground(new Color(205, 180, 219));
+            buttons[i].setBackground(new Color(150,150,150));
 
         }
 
@@ -279,7 +279,7 @@ public class TicTacToe implements ActionListener{
             buttons[i].setEnabled(false);
         }
         textfield.setText("X wins");
-
+        resetboard();
 
 
     }
@@ -293,7 +293,7 @@ public class TicTacToe implements ActionListener{
             buttons[i].setEnabled(false);
         }
         textfield.setText("O wins");
-
+        resetboard();
     }
 
 
