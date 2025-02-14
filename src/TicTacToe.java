@@ -279,7 +279,7 @@ public class TicTacToe implements ActionListener{
             buttons[i].setEnabled(false);
         }
         textfield.setText("X wins");
-        resetboard();
+
 
 
     }
@@ -293,7 +293,7 @@ public class TicTacToe implements ActionListener{
             buttons[i].setEnabled(false);
         }
         textfield.setText("O wins");
-        resetboard();
+
     }
 
 
