@@ -2,32 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>deploy</title>
+    <title>Deploy Tic Tac Toe</title>
     <script src="https://cjrtnc.leaningtech.com/3.1/cj3loader.js"></script>
 </head>
 <style>
-  html,
-  body {
+  html, body {
     margin: 0;
+    overflow: hidden;
   }
 
   #container {
     width: 100vw;
-    height: 100svh;
+    height: 100vh;
   }
 </style>
 <body>
 <div id="container"></div>
 <script>
-      (async function () {
-        await cheerpjInit();
-  cheerpjCreateDisplay(-1, -1, document.getElementById("container"));
-        await cheerpjRunJar("https://raw.githubusercontent.com/Code-Nico-Code/Tic-Tac-Toe/main/TicTacToe.jar
-");
-      })();
-    </script>
-);
-
-
+    (async function () {
+      await cheerpjInit();
+      cheerpjCreateDisplay(-1, -1, document.getElementById("container"));
+      await cheerpjRunJar("https://raw.githubusercontent.com/Code-Nico-Code/Tic-Tac-Toe/main/TicTacToe.jar");
+    })();
+  </script>
 </body>
 </html>
